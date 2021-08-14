@@ -1,0 +1,214 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:120px;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 100%;
+}
+
+/* Navigation Bar:Logo and image */
+#logo{
+    margin: 11px 27px;
+}
+
+#logo img{
+    height: 80px;
+    margin: 2px 2px;
+}
+
+/* Navigationa Bar: list */
+#navbar ul{
+    display: flex;
+    font-family: "Baloo Bhai","cursive";
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    /* padding: 2px 33px; */
+    margin-left: 80px;
+    border-radius: 15px;
+}
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+
+#home::before{
+    content: "";
+    background: url("image/spaghetti-1932466_1920.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 80%;
+}
+
+.h1-primary{
+    font-size: 3rem;
+    padding: 10px;
+    margin-top: 300px;
+    font-family: "Bree Serif","serif";
+}
+.h1-secondary{
+    font-size: 3rem;
+    padding: 10px;
+    margin-top: 100px;
+    font-family: "Bree Serif","serif";
+}
+
+.h2-secondary{
+    font-size: 1.8rem;
+    padding: 10px;
+    font-family: "Bree Serif","serif";
+}
+
+.btn{
+    background-color: #ea3f3f;
+    color: white;
+    font-size: 1.5rem;
+    margin: 19px;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: "Bree Serif","serif";
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Bree Serif","serif";
+}
+
+/* Section service-container */
+
+.center{
+    text-align: center;
+}
+
+.service-container{
+    display: block;
+}
+
+#service{
+    display: block;
+    margin: auto;
+    width: 33%;
+    height: 100%;
+
+}
+
+#service .box{
+    border: 4px solid red;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+#service .box img{
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+#service .box p{
+    font-family: "Bree Serif","serif";
+}
+
+/* #Client Section */
+#client{
+    font-size: 3rem;
+}
+
+#client-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#client-section::before{
+    content: '';
+    background: url(image/pexels-trang-doan-1092730.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    z-index: -1;
+    opacity: 40%;
+
+}
+
+#client-section .client{
+    display: flex;
+}
+
+#client-section .client img{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+}
+
+footer{
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    justify-content: flex-end;
+}

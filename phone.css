@@ -1,0 +1,32 @@
+/* Navigation Section*/
+/* #navbar{
+
+} */
+#navbar ul li a {
+    margin-left: 50px;
+}
+
+/* Home Section*/
+/* #home{
+
+} */
+
+
+/* Services Section*/
+/* .service-container{
+
+} */
+
+
+/* Client Section*/
+/* #client-section{
+
+} */
+#client-section .client img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Footer Section*/
